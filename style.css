@@ -54,5 +54,15 @@ h1 {
 .chat-log {
     height: 25vh;
     text-align: left;
-    line-height: 20px;
+    bottom: 0;
 }
+
+.menu {
+    border: 4px dashed black;
+    height: 100%;
+}
+
+.menu-row {
+    height: 100%;
+    border: 4px solid blue;
+} 

@@ -72,7 +72,6 @@
           <!-- This row is where players will play the game -->
           <div class="row pic-row">
             <div class="col">
-
               <div class="container-fluid pic-card">
                 <div class="row card-row">
                   <div class="col">
@@ -81,7 +80,9 @@
                 </div>
                 <div class="row scoreboard">
                   <div class="col">
-                    <button type="button" class="btn btn-primary">Choose</button>
+                    <button type="button" class="btn btn-primary">
+                      Choose
+                    </button>
                   </div>
                 </div>
               </div>
@@ -96,7 +97,9 @@
                 </div>
                 <div class="row scoreboard">
                   <div class="col">
-                    <button type="button" class="btn btn-primary">Choose</button>
+                    <button type="button" class="btn btn-primary">
+                      Choose
+                    </button>
                   </div>
                 </div>
               </div>
@@ -111,7 +114,9 @@
                 </div>
                 <div class="row scoreboard">
                   <div class="col">
-                    <button type="button" class="btn btn-primary">Choose</button>
+                    <button type="button" class="btn btn-primary">
+                      Choose
+                    </button>
                   </div>
                 </div>
               </div>
@@ -121,7 +126,7 @@
           <!-- This row is for the chat log and menu -->
           <div class="row control-row">
             <div class="col">
-              <input
+              <textarea
                 class="form-control chat-log"
                 type="text"
                 value="Chatlog here!"
@@ -129,9 +134,34 @@
                 aria-label="readonly input example"
                 rows="5"
                 readonly
-              />
+              ></textarea>
             </div>
-            <div class="col">32</div>
+            <div class="col">
+              <div class="container menu">
+                <div class="row menu-row">
+                  <div class="col">
+                    <h6 style="border-bottom:2px solid black;">game control</h6>
+                    <div style="overflow-y:scroll;height:20vh" class="btn-group-vertical" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-primary">Play vs RNG</button>
+                      <button type="button" class="btn btn-primary">Sim</button>
+                      <button type="button" class="btn btn-primary">Other</button>
+                    </div>
+                  </div>
+                  
+                  <div class="col">
+                    <h6 style="border-bottom:2px solid black;">extra settings</h6>
+                    <div style="overflow-y:scroll;height:20vh" class="btn-group-vertical" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-primary">Sim settings</button>
+                      <input type="text">
+                      <button type="button" class="btn btn-primary">Sim</button>
+                      <button type="button" class="btn btn-primary">Other</button>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
