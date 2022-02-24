@@ -16,6 +16,11 @@ h1 {
     text-align: center;
     background-color: black;
     border: 6px dashed orange;
+    height: 20vh;
+}
+
+.pic-row {
+    height: 28vh;
 }
 
 .container {
