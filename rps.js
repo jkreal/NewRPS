@@ -1,3 +1,4 @@
 $(document).ready(() => {
-    console.log("jquery is working");
+    $("#ties").append("content");
+    $("#chatlog").val("hello world!");
 });

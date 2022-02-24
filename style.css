@@ -6,7 +6,7 @@ h1 {
 .col {
 
     /* background-color: aqua; */
-    border: 4px solid blue;
+    border: 4px solid black;
 }
 
 .row {
@@ -14,16 +14,45 @@ h1 {
     justify-content: center;
     margin: auto; */
     text-align: center;
-    background-color: black;
-    border: 6px dashed orange;
-    height: 20vh;
+    background-color: whitesmoke;
+    /* border: 6px dashed orange; */
+    height: 18vh;
 }
 
 .pic-row {
-    height: 28vh;
+    height: 55vh;
+}
+
+.scoreboard {
+    height: 8vh;
 }
 
 .container {
     align-items: center;
     margin: auto;
+}
+
+.pic {
+    box-shadow: 16px 16px;
+    border: 3px solid black;
+    padding: 5px;
+    background-color: darkcyan;
+}
+
+.pic-card {
+    
+}
+
+.card-row {
+    height: 45vh;
+}
+
+.control-row{
+    height: 25vh;
+}
+
+.chat-log {
+    height: 25vh;
+    text-align: left;
+    line-height: 20px;
 }
