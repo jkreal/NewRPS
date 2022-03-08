@@ -68,7 +68,7 @@ h1 {
 } 
 
 
-@media screen and (max-width: 420px) {
+@media screen and (max-height: 420px) {
     body {
       background-color: lightgreen;
     }
@@ -78,14 +78,27 @@ h1 {
     }
 
     .card-row {
-        height: 10vh;
+        height: 25vh;
     }
 
     .pic {
-        width: 33%;
+        width: 50%;
     }
 
     .pic-col {
         border: 4px dashed brown;
+        height: 100%;
+    }
+
+    .pic-row {
+        height: 40vh;
+    }
+
+    .menu {
+        overflow: scroll;
+    }
+
+    .score-row{
+        height: 50vh;
     }
   }
