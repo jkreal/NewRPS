@@ -14,6 +14,9 @@ $(document).ready(() => {
   if ($(window).width() < 420) {
     emptyBox();
   }
+
+  $("#main-text").append("Welcome to Rock Paper Scissors!");
+  $("#main-text").append("Welcome to Rock Paper Scissors!2");
 });
 
 $(window).resize(function () {
