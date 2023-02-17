@@ -1,6 +1,7 @@
-var entirety;
-var resizeNeeded = false;
-var messageLog = "";
+let entirety;
+let resizeNeeded = false;
+let messageLog = "";
+let date = new Date();
 
 // This function is used to empty the contents of the game in case it detects the user is using a phone in portrait mode.
 function emptyBox() {
@@ -13,7 +14,8 @@ function emptyBox() {
 }
 
 function addMessage(message) {
-  messageLog = message + "\n" + messageLog;
+  date = new Date();
+  messageLog = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + "> " + message + "\n" + messageLog;
   $("#main-text").val(messageLog);
 }
 
@@ -26,11 +28,12 @@ $(document).ready(() => {
 });
 
 $(".image").on("click", function () {
-  addMessage("You chose " + $(this).attr("alt") + ".");
+  addMessage( "You chose " + $(this).attr("alt") + ".");
 });
 
 function rockPaperScissors(choice) {
   var compChoice = Math.floor(Math.random() * 3);
+  addMessage("The computer has chosen");
   switch (choice) {
     //   Player chose Rock
     case 0:
